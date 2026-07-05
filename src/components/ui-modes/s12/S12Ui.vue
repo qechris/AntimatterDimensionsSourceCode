@@ -73,6 +73,11 @@ export default {
       type="text/css"
       :href="isOldUi ? 'stylesheets/old-ui.css' : 'stylesheets/new-ui-styles.css'"
     >
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="stylesheets/mobile.css"
+    >
     <span
       class="c-s12-close-button"
       @click="S12Windows.isMinimised = true"

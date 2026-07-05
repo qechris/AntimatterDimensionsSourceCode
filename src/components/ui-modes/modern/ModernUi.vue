@@ -59,6 +59,11 @@ export default {
       type="text/css"
       href="stylesheets/new-ui-styles.css"
     >
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="stylesheets/mobile.css"
+    >
     <div
       :key="newGameKey"
       class="game-container"

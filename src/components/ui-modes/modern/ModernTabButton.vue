@@ -65,7 +65,9 @@ export default {
   >
     <div
       class="l-tab-btn-inner"
+      tabindex="0"
       @click="tab.show(true)"
+      @keydown.enter="tab.show(true)"
     >
       {{ tabName }}
       <div
@@ -88,7 +90,9 @@ export default {
             [tab.config.UIClass,
              {'o-subtab-btn--active': isCurrentSubtab(subtab.id)}]
           "
+          tabindex="0"
           @click="subtab.show(true)"
+          @keydown.enter="subtab.show(true)"
         >
           <span v-html="subtab.symbol" />
           <div
