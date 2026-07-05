@@ -5,11 +5,9 @@ env:
 
 on:
   push:
-    branches:
-      - release
+    tags:
+      - "v*"
   workflow_dispatch:
-    branches:
-      - release
 
 permissions:
   contents: read
