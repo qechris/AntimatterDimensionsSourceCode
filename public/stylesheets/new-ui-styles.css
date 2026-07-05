@@ -83,7 +83,11 @@ body.t-s12 {
 .c-modern-sidebar:hover .subtabs,
 .c-modern-sidebar:hover .l-tab-btn-inner,
 .c-modern-sidebar:hover .o-tab-btn,
-.c-modern-sidebar:hover .o-tab-btn::after {
+.c-modern-sidebar:hover .o-tab-btn::after,
+.c-modern-sidebar:focus-within .subtabs,
+.c-modern-sidebar:focus-within .l-tab-btn-inner,
+.c-modern-sidebar:focus-within .o-tab-btn,
+.c-modern-sidebar:focus-within .o-tab-btn::after {
   transition-delay: 0s;
 }
 
@@ -139,7 +143,8 @@ body.t-s12 {
   cursor: pointer;
 }
 
-.o-tab-btn:hover .subtabs {
+.o-tab-btn:hover .subtabs,
+.o-tab-btn:focus-within .subtabs {
   left: calc(var(--sidebar-width) + 2.3rem);
   opacity: 1;
   pointer-events: all;
@@ -284,12 +289,14 @@ body.t-s12 {
   transition-duration: 0.2s;
 }
 
-.o-tab-btn--subtab:hover .o-subtab__tooltip {
+.o-tab-btn--subtab:hover .o-subtab__tooltip,
+.o-tab-btn--subtab:focus-within .o-subtab__tooltip {
   bottom: calc(100% + 0.7rem);
   opacity: 1;
 }
 
-.o-tab-btn--subtab:hover .o-subtab__tooltip::after {
+.o-tab-btn--subtab:hover .o-subtab__tooltip::after,
+.o-tab-btn--subtab:focus-within .o-subtab__tooltip::after {
   border-top-width: 0.7rem;
   margin-bottom: -0.7rem;
 }
